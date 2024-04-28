@@ -1,0 +1,34 @@
+<use   name="boost"/>
+<use   name="root"/>
+<use   name="rootgpad"/>
+<use   name="DataFormats/MuonDetId"/>
+<use   name="DataFormats/GEMDigi"/>
+<use   name="DataFormats/RPCDigi"/>
+<use   name="DataFormats/CSCDigi"/>
+<use   name="DataFormats/CSCRecHit"/>
+<use   name="FWCore/Framework"/>
+<use   name="FWCore/MessageLogger"/>
+<use   name="FWCore/ParameterSet"/>
+<use   name="FWCore/PluginManager"/>
+<use   name="FWCore/Utilities"/>
+<use   name="MagneticField/Engine"/>
+<use   name="MagneticField/Records"/>
+<use   name="TrackingTools/GeomPropagators"/>
+<use   name="TrackingTools/Records"/>
+<use   name="TrackingTools/TrajectoryState"/>
+<use   name="Geometry/CommonDetUnit"/>
+<use   name="Geometry/Records"/>
+<use   name="Geometry/RPCGeometry"/>
+<use   name="Geometry/CSCGeometry"/>
+<use   name="Geometry/GEMGeometry"/>
+<use   name="L1Trigger/CSCTriggerPrimitives"/>
+<use   name="SimDataFormats/CrossingFrame"/>
+<use   name="SimDataFormats/Vertex"/>
+<use   name="SimGeneral/HepPDTRecord"/>
+<use   name="CommonTools/UtilAlgos"/>
+<use   name="RecoMuon/TrackingTools"/>
+<use   name="Utilities/General"/>
+<export>
+  <lib   name="1"/>
+</export>
+<flags ADD_SUBDIR="1"/>
