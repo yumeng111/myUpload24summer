@@ -110,18 +110,18 @@ if options.unpackGEM:
 ## global tag (data or MC, Run-2 or Run-3)
 from Configuration.AlCa.GlobalTag import GlobalTag
 if options.mc:
-      #process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
-      process.GlobalTag = GlobalTag(process.GlobalTag, '112X_dataRun3_Prompt_v5', '')
-      if options.run3:
-            #process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:phase1_2021_realistic', '')
+    #process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
+    process.GlobalTag = GlobalTag(process.GlobalTag, '112X_dataRun3_Prompt_v5', '')
+    if options.run3:
+          process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:phase1_2022_realistic', '')
+          #process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:phase1_2021_realistic', '')
             #process.GlobalTag = GlobalTag(process.GlobalTag, '123X_mcRun3_2021_realistic_v14', '')
-            process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:phase1_2022_realistic', '')
 else:
-      #process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_data', '')
-      process.GlobalTag = GlobalTag(process.GlobalTag, '112X_dataRun3_Prompt_v5', '')
-      if options.run3:
-            process.GlobalTag = GlobalTag(process.GlobalTag, '112X_dataRun3_Prompt_v5', '')
-            #process.GlobalTag = GlobalTag(process.GlobalTag, '140X_dataRun3_Prompt_v2', '')
+    #process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_data', '') 
+    process.GlobalTag = GlobalTag(process.GlobalTag, '112X_dataRun3_Prompt_v5', '')
+    if options.run3:
+           # process.GlobalTag = GlobalTag(process.GlobalTag, '112X_dataRun3_Prompt_v5', '')
+            process.GlobalTag = GlobalTag(process.GlobalTag, '130X_dataRun3_Prompt_v2', '')
 #process.GlobalTag.globaltag = '74X_dataRun2_Prompt_v0'
 #process.GlobalTag.globaltag = '92X_dataRun2_Prompt_v11'
 #process.GlobalTag.globaltag = '102X_dataRun2_Prompt_v1'
@@ -361,7 +361,8 @@ gemsimHitTagSrc        = cms.untracked.InputTag(""),
 gemPadTagSrc           = cms.untracked.InputTag(""),
 gemPadClusterTagSrc    = cms.untracked.InputTag(""),
 
-addEmulation = cms.untracked.bool(options.l1 or options.l1GEM),
+addEmulation = cms.untracked.bool(True),
+#addEmulation = cms.untracked.bool(options.l1 or options.l1GEM),
 addSimHits = cms.untracked.bool(True),
 doGEMDisplay = cms.untracked.bool(options.runME11ILT or options.runME21ILT or options.l1GEM),
 doGEMCSC = cms.untracked.bool(options.doGEMCSC),  
